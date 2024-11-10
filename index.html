@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font awesome cdn link -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>coffe-shop-website</title>
     <!-- custom css file link -->
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- header section starts -->
-    <header class="header">
-      <a href="#" class="logo">
-        <img src="delicious-coffee_24877-49164.jpg" alt="">
-      </a>
-      <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#menu">menu</a>
-        <a href="#products">products</a>
-        <a href="#review">review</a>
-        <a href="#contact">contact</a>
-        <a href="#blogs">blogs</a>
-      </nav>
-      <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-      </div>
-      <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-      </div>
-      <div class="cart-items-container">
+</head>
+<body>
+  
+  <!--header starts-->
+  <header class="header">
+     <div class="container">
+       <a class="menu-btn fa fa-bars"></a>
+       <a class="search-btn fa fa-search"></a>
+       <form action="#" class="header-search-form">
+         <input type="search" placeholder="ابحث هنا...">
+       </form>
+     </div>
+     <a href="#" class="logo">classic coffee</a>
+     <div class="container">
+       <a class="cart-btn fa fa-shopping-cart"></a>
+       <a href="#" class="user-account fa fa-user"></a>
+     </div>
+     <!--minue bar starts-->
+     <nav class="menu-bar">
+       <a href="#" class="minue-bar-logo">classic coffee</a>
+       <form action="#" class="menu-search-form">
+         <input type="search" placeholder="ابحث هنا...">
+       </form>
+       <nav>
+         <a href="#turkish-coffee" class="link">
+           قهوة تركي
+         </a>
+         <a href="#espresso-coffee" class="link">
+           قهوة اسبريسو
+         </a>
+         <a href="#filter-coffee" class="link">
+           قهوة فلتر
+         </a>
+         <a href="#french-coffee" class="link">
+           قهوة فرنساوي
+         </a>
+         <a href="#green-coffee" class="link">
+           قهوة خضراء
+         </a>
+         <a href="#quick-coffee" class="link">
+           منتجات سريعة التحضير
+         </a>
+         <a class="btn">
+           اختر توليفة
+         </a>
+       </nav>
+     </nav>
+     <!--minue bar ends-->
+     
+     <!-- cart items starts-->
+     <div class="cart-items-container">
         <div class="cart-item">
           <span class="fas fa-times"></span>
           <img src="coffee-light@2x.webp" alt="">
           <div class="content">
-            <h3>cart item 01</h3>
+            <h3>
+              قهوة فاتحة
+            </h3>
             <div class="price">$15.99/-</div>
           </div>
         </div>
@@ -47,7 +74,9 @@
           <span class="fas fa-times"></span>
           <img src="coffee-medium@2x.webp" alt="">
           <div class="content">
-            <h3>cart item 02</h3>
+            <h3>
+              قهوة وسط
+            </h3>
             <div class="price">$15.99/-</div>
           </div>
         </div>
@@ -55,7 +84,9 @@
           <span class="fas fa-times"></span>
           <img src="coffee-dark@2x.webp" alt="">
           <div class="content">
-            <h3>cart item 03</h3>
+            <h3>
+              قهوة غامقة
+            </h3>
             <div class="price">$15.99/-</div>
           </div>
         </div>
@@ -63,320 +94,715 @@
           <span class="fas fa-times"></span>
           <img src="coffee-burn@2x.webp" alt="">
           <div class="content">
-            <h3>cart item 04</h3>
+            <h3>
+              قهوة محروقة
+            </h3>
             <div class="price">$15.99/-</div>
           </div>
         </div>
-        <a href="#" class="btn">checkout now</a>
+        <a href="#" class="btn">شراء الان</a>
       </div>
-    </header>
-    <!-- header section ends -->
-    
-    <!--home section starts  -->
-    <section class="home" id="home">
-     
-     <div class="content">
-       <h3>fresh coffee in the morning</h3>
-       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. placeat labore, sint cupiditate distinctio tempora re8ciendis.</p>
-       <a href="#" class="btn">get yours now</a>
-     </div>
-     
-   </section>
-    <!--home section ends  -->  
-    
-    <!--about section starts  -->  
-    <section class="about" id="about">
-    <h1 class="heading"> <span>about</span> us </h1>
+     <!-- cart items ends-->
+  </header>
+  <!--header ends-->
   
-   <div class="row">
-    
-    <div class="image">
-      <img src="coffee-banner-template.jpg" alt="">
-    </div>  
-    
-    <div class="content">
-      <h3>what makes our coffee special</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus qui eaullma, enim tempora ipsum fuga alias quae ratione a officiis id temporaibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
-      <p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
-      <a href="#" class="btn">learn more</a>
+  <!--interface starts-->
+  <div class="interface"></div>
+  <!--interface ends-->
+  
+  <!--section starts-->
+  <section class="section" id="turkish-coffee">
+    <h1 class="title">
+      بن تركي
+    </h1>
+    <div class="products">
+      <div class="product">
+        <div class="img-container">
+          <img src="product-1.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-1.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-1.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-1.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-1.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-1.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
-   
-   </div>
-    
   </section>
-    <!--about section ends  -->
-    
-    <!-- menu section starts -->  
-    <section class="menu" id="menu">
-    <h1 class="heading">our <span>menu</span> </h1>
-    
-    <div class="box-container">
-      
-     <div class="box">
-       <img src="menu-1.jpg">
-       <h3>tasty and healty</h3>
-       <div class="price">$15.99 <span>20.99</span> </div>
-       <a href="#" class="btn">add to cart</a>
-     </div>
-     
-     <div class="box">
-       <img src="menu-2.jpg">
-       <h3>tasty and healty</h3>
-       <div class="price">$15.99 <span>20.99</span> </div>
-       <a href="#" class="btn">add to cart</a>
-     </div>
-     
-     <div class="box">
-       <img src="menu-3.jpg">
-       <h3>tasty and healty</h3>
-       <div class="price">$15.99 <span>20.99</span> </div>
-       <a href="#" class="btn">add to cart</a>
-     </div>
-     
-     <div class="box">
-       <img src="menu-4.jpg">
-       <h3>tasty and healty</h3>
-       <div class="price">$15.99 <span>20.99</span> </div>
-       <a href="#" class="btn">add to cart</a>
-     </div>
-      
-      <div class="box">
-       <img src="menu-5.jpg">
-       <h3>tasty and healty</h3>
-       <div class="price">$15.99 <span>20.99</span> </div>
-       <a href="#" class="btn">add to cart</a>
-     </div>
-      
+  <section class="section" id="espresso-coffee">
+    <h1 class="title">
+      بن اسبريسو
+    </h1>
+    <div class="products">
+      <div class="product">
+        <div class="img-container">
+          <img src="product-2.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-2.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-2.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-2.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-2.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-2.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
-    
   </section>
-    <!-- menu section ends -->  
-    
-    <!-- products section starts -->
-    <section class="products" id="products">
-      
-      <h1 class="heading">our <span>products</span> </h1>
-      
-      <div class="box-container">
-        
-        <div class="box">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="paper-package-coffee-beans.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>fresh coffee</h3>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="price">$15.99<span>$20.99</span> </div>
-          </div>
+  <section class="section" id="filter-coffee">
+    <h1 class="title">
+      بن فلتر
+    </h1>
+    <div class="products">
+      <div class="product">
+        <div class="img-container">
+          <img src="product-3.jpg" alt="">
         </div>
-        
-        <div class="box">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="paper-package-coffee-beans.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>fresh coffee</h3>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="price">$15.99<span>$20.99</span> </div>
-          </div>
-        </div>
-        
-        <div class="box">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="paper-package-coffee-beans.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>fresh coffee</h3>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="price">$15.99<span>$20.99</span> </div>
-          </div>
-        </div>
-        
-      </div>
-      
-    </section>
-    <!-- products section ends -->
-    
-    <!-- review section stars -->
-    <section class="review" id="review">
-      
-      <h1 class="heading">customer's <span>review</span> </h1>
-      
-      <div class="box-container">
-        
-        <div class="box">
-          <i class="quote fa fa-quote-right"></i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicinge elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-          <img src="profile.jpeg" class="user" alt="">
-          <h3>maria deo</h3>
-          <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-          </div>
-        </div>
-        
-        <div class="box">
-          <i class="quote fa fa-quote-right"></i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicinge elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-          <img src="profile.jpeg" class="user" alt="">
-          <h3>maria deo</h3>
-          <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-          </div>
-        </div>
-        
-        <div class="box">
-          <i class="quote fa fa-quote-right"></i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicinge elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-          <img src="profile.jpeg" class="user" alt="">
-          <h3>maria deo</h3>
-          <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-          </div>
-        </div>
-        
-      </div>
-      
-    </section>
-    <!-- review section ends -->
-    
-    <!-- contact section starts -->
-    <section class="contact" id="contact">
-      <h1 class="heading"> <span>contact</span> us </h1>
-      <div class="row">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1802007.552252063!2d33.06258840624999!3d28.099388100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b25e03057b895%3A0xadb78fd11ad8d5e6!2z2KjZhiDYp9mE2LnYs9mD2LHZiiBFTGFza2FyeSBDb2ZmZWU!5e0!3m2!1sar!2seg!4v1722089443891!5m2!1sar!2seg"  allowfullscreen="" loading="lazy"></iframe>
-        <form action="">
-          <h3>get in touch</h3>
-          <div class="inputBox">
-            <span class="fas fa-user"></span>
-            <input type="text" placeholder="name">
-          </div>
-          <div class="inputBox">
-            <span class="fas fa-envelope"></span>
-            <input type="email" placeholder="email">
-          </div>
-          <div class="inputBox">
-            <span class="fas fa-phone"></span>
-            <input type="number" placeholder="number">
-          </div>
-          <input type="submit" value="contact now" class="btn">
-        </form>
-      </div>
-    </section>
-    <!-- contact section ends -->
-    
-    <!-- blogs section starts -->
-    <section class="blogs" id="blogs">
-      <h1 class="heading">our <span>blogs</span> </h1>
-      <div class="box-container">
-        <div class="box">
-          <div class="image">
-            <img src="top-view-tasty-espresso-served-cup-with-coffee.webp" alt="">
-          </div>
-          <div class="content">
-            <a href="#" class="title">testy and refreshing coffee</a>
-            <span>by admin / 21st may, 2021</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicata.</p>
-            <a href="#" class="btn">read more</a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="fresh-coffee-steams-wooden-table-close-up-generati.webp" alt="">
-          </div>
-          <div class="content">
-            <a href="#" class="title">testy and refreshing coffee</a>
-            <span>by admin / 21st may, 2021</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicata.</p>
-            <a href="#" class="btn">read more</a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="delicious-coffee-beans-cup.webp" alt="">
-          </div>
-          <div class="content">
-            <a href="#" class="title">testy and refreshing coffee</a>
-            <span>by admin / 21st may, 2021</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicata.</p>
-            <a href="#" class="btn">read more</a>
-          </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
         </div>
       </div>
-    </section>
-    <!-- blogs section ends -->
-    
-    <!-- footer section starts -->
-    <section class="footer">
-      
-      <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-pinterest"></a>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-3.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
       </div>
-      
-      <div class="links">
-        <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">menu</a>
-        <a href="#">products</a>
-        <a href="#">review</a>
-        <a href="#">contact</a>
-        <a href="#">blogs</a>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-3.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
       </div>
-      
-      <div class="credit">created by <span>pro. haitham sharlie</span> | all rights reserved</div>
-      
-    </section>
-    <!-- footer section ends -->
-    
-    <!-- custom js file link -->
-    <script src="script.js"></script>
-  </body>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-3.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-3.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-3.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="french-coffee">
+    <h1 class="title">
+      بن فرنساوي
+    </h1>
+    <div class="products">
+      <div class="product">
+        <div class="img-container">
+          <img src="product-4.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-4.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-4.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-4.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-4.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-4.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="green-coffee">
+    <h1 class="title">
+     بن اخضر
+    </h1>
+    <div class="products">
+      <div class="product">
+        <div class="img-container">
+          <img src="product-5.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-5.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-5.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-5.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-5.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-5.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="quick-coffee">
+    <h1 class="title">
+        منتجات سريعة التحضير
+    </h1>
+    <div class="products">
+      <div class="product">
+        <div class="img-container">
+          <img src="product-6.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-6.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-6.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-6.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-6.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img-container">
+          <img src="product-6.jpg" alt="">
+        </div>
+        <div class="desc">
+          <h2 class="product-name">
+            قهوة تركي سادة
+          </h2>
+          <h3 class="price">
+            140 le
+          </h3>
+          <button class="add-btn">
+            <span>
+              اضافة للعربة
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--section ends-->
+  
+  <script src="script.js"></script>
+</body>
 </html>
