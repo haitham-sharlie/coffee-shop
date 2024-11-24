@@ -154,7 +154,7 @@ body{
 .header .menu-bar nav .btn{
   display: block;
   text-align: center;
-  width: 180px;
+  width: 10rem;
   margin: 1rem auto;
   padding: .5rem;
   background-color: var(--main-color);
@@ -215,7 +215,7 @@ body{
 .header .cart-items-container .btn{
   display: block;
   text-align: center;
-  width: 180px;
+  width: 10rem;
   margin: 1rem auto;
   padding: .5rem;
   background-color: var(--main-color);
